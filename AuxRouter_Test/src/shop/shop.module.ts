@@ -4,6 +4,7 @@ import { ShopComponent } from '../shop/components/shop/shop.component';
 import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 import { PotionListComponent } from './components/potion-list/potion-list.component';
 import { WeaponListComponent } from './components/weapon-list/weapon-list.component';
+import { ShopItemDetailResolver } from './resolvers/shop-item-detail.resolver';
 import { ShopRoutingModule } from './shop-routing.module';
 
 @NgModule({
@@ -14,5 +15,6 @@ import { ShopRoutingModule } from './shop-routing.module';
     PotionListComponent,
     ItemDetailComponent,
   ],
+  providers: [ShopItemDetailResolver],
 })
 export class ShopModule {}

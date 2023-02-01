@@ -8,9 +8,9 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class PotionListComponent implements OnInit {
   potions = [
-    { id: 1, name: 'Health Potion' },
-    { id: 2, name: 'Mana Potion' },
-    { id: 3, name: 'Stamina Potion' },
+    { id: 4, name: 'Health Potion' },
+    { id: 5, name: 'Mana Potion' },
+    { id: 6, name: 'Stamina Potion' },
   ];
 
   constructor(private router: Router, private route: ActivatedRoute) {}

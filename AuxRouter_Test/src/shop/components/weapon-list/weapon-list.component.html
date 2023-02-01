@@ -1,8 +1,5 @@
 <ul>
-  <li
-    *ngFor="let weapon of weapons"
-    [routerLink]="['', { outlets: { detail: ['weapon', weapon.id] } }]"
-  >
+  <li *ngFor="let weapon of weapons" (click)="onSelect(weapon.id)">
     {{ weapon.name }}
   </li>
 </ul>
