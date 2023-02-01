@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="sidebar">
+    <nav>
+      <a routerLink="weapons" [routerLinkActive]="['active']">Weapons</a>
+      <a routerLink="potions" [routerLinkActive]="['active']">Potions</a>
+    </nav>
+  </div>
+  <div class="content-container">
+    <div class="main-router">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="named-router">
+      <router-outlet name="detail"></router-outlet>
+    </div>
+  </div>
+</div>

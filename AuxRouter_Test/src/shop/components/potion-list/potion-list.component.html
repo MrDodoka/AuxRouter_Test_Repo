@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let potion of potions" (click)="onSelect(potion.id)">
+    {{ potion.name }}
+  </li>
+</ul>
